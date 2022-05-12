@@ -4,11 +4,13 @@ import MainScreen from "./MainScreen";
 
 export default function App() {
 
-    const [qual, setQual] = React.useState("ok");
+    const [start, setStart] = React.useState(false);
 
     return (
         <>
-           <Init />
+           {
+               start ? <MainScreen /> : <Init setStart={setStart}/>
+           }
         </>
     );
 }
