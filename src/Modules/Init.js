@@ -6,7 +6,7 @@ export default function Init({setStart}) {
 
     return (
         <div className="introScreen">
-            <img src="./assets/logo1.svg" alt="Logo" />
+            <img src="./assets/logo.svg" alt="Logo" />
             <h1>ZapRecall</h1>
             <div className="startButton" onClick={startRecall} >Iniciar Recall!</div>
         </div>        

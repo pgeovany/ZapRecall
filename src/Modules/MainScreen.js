@@ -5,7 +5,7 @@ export default function MainScreen() {
     return (
         <div className="mainScreen">
             <div className="header">
-                <img src="./assets/logo2.svg" alt="Logo" />
+                <img src="./assets/logo-pequeno.svg" alt="Logo" />
                 <h1>ZapRecall</h1>
             </div>
             <Deck />
