@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+.root {
+    font-family: 'Righteous', cursive;
+    height: 667px;
+}
+
+.introScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB6B6B;
+    width: 100%;
+    height: 100%;
+}
+
+.introScreen > img {
+    width: 136px;
+    height: 161px;
+    margin-bottom: 24px;
+}
+
+.introScreen > h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.introScreen .startButton {
+    font-family: 'Recursive', sans-serif;
+    width: 60%;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #D70900;
+    border-radius: 5px;
+    color:#D70900;
+    font-size: 18px;
+}
+
+.introScreen .startButton:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
