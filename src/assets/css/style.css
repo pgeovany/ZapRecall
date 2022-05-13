@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&family=Righteous&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 .root {
     font-family: 'Righteous', cursive;
     background-color: #FB6B6B;
@@ -123,5 +127,31 @@
 .deck .flashcard > h1 {
     font-size: 16px;
     font-weight: 700;
+}
+
+.deck .expandedFlashcard {
+    height: 131px;
+    width: 70%;
+    background-color: #FFFFD4;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.deck .expandedFlashcard > h1 {
+    font-size: 18px;
+    color: #333333;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+}
+
+.deck .expandedFlashcard > img {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }
 

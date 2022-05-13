@@ -1,3 +1,5 @@
+import Flashcard from "./Flashcard";
+
 export default function Deck() {
 
     const Deck = [
@@ -40,16 +42,13 @@ export default function Deck() {
 
     return (
         <div className="deck">
-            {sortedDeck.map((item, index) => <Flashcard questionNumber={index+1} key={index}/> ) }
-        </div>
-    );
-}
-
-function Flashcard({questionNumber}) {
-    return (
-        <div className="flashcard">
-            <h1>Pergunta {questionNumber}</h1>
-            <ion-icon name="play-outline"></ion-icon>
+            {sortedDeck.map((item, index) =>
+            <Flashcard 
+            questionNumber={index+1} 
+            question={item.question} 
+            answer={item.answer} 
+            key={index}
+            /> ) }
         </div>
     );
 }
