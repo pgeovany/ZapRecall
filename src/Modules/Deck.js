@@ -34,8 +34,9 @@ export default function Deck() {
                 answer: "dizer para o React quais informações quando"
             }
     ];
-
-
+    
+    const sortedDeck = sortDeck(Deck);
+    //console.log(sortedDeck);
 
     return (
         <Flashcard />
@@ -48,4 +49,11 @@ function Flashcard() {
             test
         </>
     );
+}
+
+function sortDeck(deck) {
+    let aux = [...deck]
+    aux.sort(() => Math.random() - 0.5);
+    aux.length = aux.length/2;
+    return aux;
 }
