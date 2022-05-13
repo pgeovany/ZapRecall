@@ -39,15 +39,18 @@ export default function Deck() {
     //console.log(sortedDeck);
 
     return (
-        <Flashcard />
+        <div className="deck">
+            {sortedDeck.map((item, index) => <Flashcard questionNumber={index+1} key={index}/> ) }
+        </div>
     );
 }
 
-function Flashcard() {
+function Flashcard({questionNumber}) {
     return (
-        <>
-            test
-        </>
+        <div className="flashcard">
+            <h1>Pergunta {questionNumber}</h1>
+            <ion-icon name="play-outline"></ion-icon>
+        </div>
     );
 }
 
