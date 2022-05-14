@@ -10,11 +10,11 @@ export default function Flashcard({questionNumber, question, answer}) {
         <>
             {
                 expanded ?
-                <div className="expandedFlashcard">
+                <div className="expandedFlashcard" onClick={() => setExpanded(!expanded)}>
                     <h1>
                         {question}
                     </h1>
-                    <img src={flip_card} alt="flip-card" />          
+                    <img src={flip_card} alt="flip-card"/>          
                 </div>
                 :
                 <div className="flashcard" onClick={() => setExpanded(true)}>

@@ -56,6 +56,5 @@ export default function Deck() {
 function sortDeck(deck) {
     let aux = [...deck]
     aux.sort(() => Math.random() - 0.5);
-    aux.length = aux.length/2;
     return aux;
 }
