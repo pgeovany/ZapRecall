@@ -1,16 +1,25 @@
-import Footer from "./Footer";
+import React from "react"
+import Header from "./Header";
 import Deck from "./Deck";
-import small_logo from "../assets/images/logo-pequeno.svg"
+import Footer from "./Footer";
 
 export default function MainScreen() {
+
+    const [count, setCount] = React.useState(0);
+    const [deckSize, setDeckSize] = React.useState();
+    const [answersIcons, setanswersIcons] = React.useState([]);
+
     return (
         <div className="mainScreen">
-            <div className="header">
-                <img src={small_logo} alt="Logo" />
-                <h1>ZapRecall</h1>
-            </div>
-            <Deck />
-            <Footer />
+            <Header />
+            <Deck
+                setDeckSize={setDeckSize}
+                setCount={setCount}
+                count={count}
+                answersIcons={answersIcons}
+                setanswersIcons={setanswersIcons}
+            />
+            <Footer deckSize={deckSize} count={count} answersIcons={answersIcons}/>
         </div>
     );
 }

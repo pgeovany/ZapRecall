@@ -1,6 +1,6 @@
 import Flashcard from "./Flashcard";
 
-export default function Deck() {
+export default function Deck({setDeckSize, setCount, count, answersIcons, setanswersIcons}) {
 
     const Deck = [
             {
@@ -38,7 +38,7 @@ export default function Deck() {
     ];
     
     const sortedDeck = sortDeck(Deck);
-    //console.log(sortedDeck);
+    setDeckSize(sortedDeck.length);
 
     return (
         <div className="deck">
@@ -46,7 +46,11 @@ export default function Deck() {
             <Flashcard 
             questionNumber={index+1} 
             question={item.question} 
-            answer={item.answer} 
+            answer={item.answer}
+            setCount={setCount}
+            count={count}
+            answersIcons={answersIcons}
+            setanswersIcons={setanswersIcons}
             key={index}
             /> ) }
         </div>
