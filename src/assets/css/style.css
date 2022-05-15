@@ -111,6 +111,7 @@
 
 .deck ion-icon {
     font-size: 30px;
+    color: #333333;
 }
 
 .deck .flashcard {
@@ -131,7 +132,9 @@
     font-weight: 700;
 }
 
-.deck .expandedFlashcard {
+.deck 
+.expandedFlashcard,
+.flippedCard{
     height: 131px;
     width: 80%;
     background-color: #FFFFD4;
@@ -141,7 +144,8 @@
     position: relative;
 }
 
-.deck .expandedFlashcard > h1 {
+.deck .expandedFlashcard > h1,
+.flippedCard > h1 {
     font-size: 18px;
     color: #333333;
     padding-left: 14px;
@@ -157,3 +161,54 @@
     right: 5%;
 }
 
+.deck .flippedCard > div {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.totalRecall {
+    background-color: #2FBE34;
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+.partialRecall {
+    background-color: #FF922E;
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.noRecall {
+    background-color: #FF3030;
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+ion-icon[name="checkmark-circle"]{
+    color: #2FBE34;
+}
+
+ion-icon[name="help-circle"]{
+    color: #FF922E;
+}
+
+ion-icon[name="close-circle"]{
+    color: #FF3030;
+}
+
+
+.deck .flippedCard button {
+    width: 80px;
+    height: 36px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+}
