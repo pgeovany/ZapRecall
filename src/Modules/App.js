@@ -6,7 +6,7 @@ import "../assets/css/style.css"
 
 export default function App() {
 
-    const [start, setStart] = React.useState(true);
+    const [start, setStart] = React.useState(false);
 
     return (
         <>
