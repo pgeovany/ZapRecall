@@ -5,7 +5,7 @@ import flip_card from "../assets/images/vector.svg"
 export default function Flashcard({questionNumber, question, answer}) {
 
     const [expanded, setExpanded] = React.useState(false);
-    const [flipped, setFlipped] = React.useState(true);
+    const [flipped, setFlipped] = React.useState(false);
     const [recallType, setRecallType] = React.useState("");
     const [icon, setIcon] = React.useState("play-outline");
     //console.log(questionNumber, question, answer);
