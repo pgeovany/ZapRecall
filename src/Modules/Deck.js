@@ -58,7 +58,7 @@ export default function Deck({setDeckSize, setCount, count, answersIcons, setans
 }
 
 function sortDeck(deck) {
-    let aux = [...deck]
+    let aux = [...deck];
     aux.sort(() => Math.random() - 0.5);
     return aux;
 }
