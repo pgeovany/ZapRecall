@@ -238,3 +238,25 @@ button:hover,
 .expandedFlashcard > img {
     cursor: pointer;
 }
+
+@media screen and (min-width: 614px){
+    .introScreen .startButton {
+        width: 380px;
+    }
+
+    .deck .flashcard {
+        width: 380px;
+    }
+
+    .deck 
+    .expandedFlashcard,
+    .flippedCard {
+        width: 380px;
+    }
+
+    .deck .flippedCard button {
+        width: 100px;
+        height: 44px;
+        font-size: 14px;
+    }
+}
